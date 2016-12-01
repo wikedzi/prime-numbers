@@ -1,3 +1,4 @@
+import time
 def primeNumbers(t):
     "This function prints a list of n prime number"
     if t < 2:
@@ -11,5 +12,9 @@ def primeNumbers(t):
         else:
             primes.append(i)
     return primes
-   
-#print( primeNumbers(299))
+
+stime = time.time()
+print(primeNumbers(1000))
+etime = time.time()
+
+print("Start time ", stime, " End time ", etime)
